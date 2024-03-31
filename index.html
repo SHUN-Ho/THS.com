@@ -1,14 +1,43 @@
-<div class="scroll-infinity">
-<div class="scroll-infinity__wrap">
-  <ul class="scroll-infinity__list scroll-infinity__list--left">
-    <li class="scroll-infinity__item--text">css animation scroll infinity</li>
-    <li class="scroll-infinity__item--text">css animation scroll infinity</li>
-    <li class="scroll-infinity__item--text">css animation scroll infinity</li>
-  </ul>
-  <ul class="scroll-infinity__list scroll-infinity__list--left">
-    <li class="scroll-infinity__item--text">css animation scroll infinity</li>
-    <li class="scroll-infinity__item--text">css animation scroll infinity</li>
-    <li class="scroll-infinity__item--text">css animation scroll infinity</li>
-  </ul>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>横スクロールイラスト</title>
+<style>
+  .scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .scroll-item {
+    display: inline-block;
+    width: 200px; /* イラストの幅に応じて調整してください */
+    margin-right: 10px;
+  }
+
+  /* スクロールバーをカスタマイズする場合は以下のスタイルを追加 */
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-container">
+  <!-- イラストのimgタグを追加してください -->
+  <img src="samle.PNG" alt="イラスト1" class="scroll-item">
+  <img src="samle.PNG" alt="イラスト2" class="scroll-item">
+  <!-- 他のイラストも同様に追加 -->
 </div>
-</div>
+
+</body>
+</html>
