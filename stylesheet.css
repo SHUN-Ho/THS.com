@@ -1,11 +1,6 @@
-	@keyframes infinity-scroll-right {
-from {
-  transform: translateX(-100%);
-}
-  to {
-  transform: translateX(0%);
-}
-}
-.scroll-infinity__list--right{
-  animation :infinity-scroll-right 80s infinite linear 0.5s both;
+.scroll-infinity__item--text {
+  font-family: Comfortaa,cursive;
+  width: calc(500vw / 3);
+  font-size: 15rem;
+  color: #222;
 }
