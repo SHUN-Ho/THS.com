@@ -1,6 +1,24 @@
-.scroll-infinity__item--text {
-  font-family: Comfortaa,cursive;
-  width: calc(500vw / 3);
-  font-size: 15rem;
-  color: #222;
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-item {
+  display: inline-block;
+  width: 200px; /* イラストの幅に応じて調整してください */
+  margin-right: 10px;
+}
+
+/* スクロールバーをカスタマイズする場合は以下のスタイルを追加 */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
