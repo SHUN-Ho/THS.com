@@ -1,0 +1,11 @@
+	@keyframes infinity-scroll-right {
+from {
+  transform: translateX(-100%);
+}
+  to {
+  transform: translateX(0%);
+}
+}
+.scroll-infinity__list--right{
+  animation :infinity-scroll-right 80s infinite linear 0.5s both;
+}
